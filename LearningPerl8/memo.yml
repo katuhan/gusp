@@ -1,0 +1,22 @@
+#Learning Perl
+
+learning perl from learning.oreilly.com (mail:Z...2) 
+map: Learning Perl 8th Edition ==> Intermediate Perl ==> Mastering Perl 
+
+---
+## Scalar Data 
+
+A scalar is a single thing.
+Perl不像C语言，有char, int, double等这样很多类型，所有这样单一的事物在Perl中都是一种类型--标量。
+
+### Numbers
+所有的数字在Perl中被当作C语言中的double类型处理。
+操作符+-*/提供数字上下文，且因为时double类型，所以10/3不等于3，而可是能3.33333333333333。
+支持%操作，10.5 % 3.2 == 10 % 3 == 1。
+2**3表示2的3次方。
+
+如果use warning出的信息不够准确，可以用use diagnostics;输出诊断信息，但它影响启动性能，另一种方法
+时在需要的时候命令行设定开关perl -Mdiagnostics ./my_program
+
+---
+
